@@ -10,11 +10,17 @@ body {
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
   margin-top: 5rem;
   font-size: 30px;
-  cursor: pointer;
+  font-family: 'Space Mono';
+}
+
+h2 {
+  font-family: 'Space Mono';
+
+  font-size: 25px;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
 }
 
 .first-container,
@@ -23,31 +29,31 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   width: calc(100% - 48px);
+  text-align: center;
+}
+
+.btn-1,
+.btn-2 {
+  width: 12rem;
+  height: 4rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  font-size: 15px;
+  font-family: 'Space Mono';
+}
+.btn-2 {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 4px solid var(--black);
 }
 
 .btn-1 {
   background-color: var(--black);
   color: var(--white);
-  width: 10rem;
-  height: 4rem;
-  margin: 2rem;
-  border-radius: 2rem;
-  font-size: 20px;
-  border: 4px solid var(--blue);
-  font-family: 'Space Mono';
-}
 
-.btn-2 {
-  background-color: var(--blue);
-  color: var(--white);
-  width: 10rem;
-  height: 4rem;
-  margin: 2rem;
-  border-radius: 2rem;
-  font-size: 20px;
-  border: 4px solid var(--black);
-  font-family: 'Space Mono';
+  border: 4px solid var(--blue);
 }
 
 .btn-2:hover,
@@ -56,19 +62,14 @@ h1 {
 }
 
 .feelings-container,
-.reveal-container {
+.solutions-container {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
 
 .feelings-container,
-.reveal-container p {
+.solutions-container p {
   font-size: 25px;
-}
-
-h2 {
-  font-size: 25px;
-  margin-bottom: 2rem;
-  margin-top: 10rem;
+  font-family: 'Space Mono';
 }

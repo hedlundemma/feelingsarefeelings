@@ -3,7 +3,7 @@ const buttonSecond = document.querySelector('.btn-2');
 const heading = document.querySelector('h1');
 const feelingsContainer = document.querySelector('.feelings-container');
 const paragraph = document.createElement('p');
-const solutionsContainer = document.querySelector('.reveal-container');
+const solutionsContainer = document.querySelector('.solutions-container');
 
 // Change text color on mouseover
 buttonFirst.addEventListener('mouseover', function () {
@@ -56,6 +56,7 @@ buttonFirst.addEventListener('click', () => {
   }
 });
 
+// event-listener for första knappen, choose random index from solutions-array, append paragraph that i created into solutions-container
 buttonSecond.addEventListener('click', () => {
   const random = Math.floor(Math.random() * solutions.length);
 
