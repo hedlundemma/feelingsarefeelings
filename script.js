@@ -41,31 +41,29 @@ const solutions = [
 buttonFirst.addEventListener('click', () => {
   // play a sound from the const clickSound
   clickSound.play();
+  // choose a random value from the array feelings
   const random = Math.floor(Math.random() * feelings.length);
   for (i = 0; i < feelings.length; i++) {
-    // if i matches the value of random, append the paragraph into the div feelingsContainer
-    if (i === random) {
-      paragraph.innerHTML = feelings[random];
-      feelingsContainer.appendChild(paragraph);
-    }
+    paragraph.innerHTML = feelings[random];
+    // add feelings from the array to the div feelingsContainer
+    feelingsContainer.appendChild(paragraph);
   }
 });
 
-//second button on the page, choose random index from solutions-array to loop solutions
+//second button on the page
 buttonSecond.addEventListener('click', () => {
   // play a sound from the const clickSound
   clickSound.play();
+  // choose a random value from the array solutions
   const random = Math.floor(Math.random() * solutions.length);
-  // if i matches the value of random, append the paragraph into the div feelingsContainer
   for (i = 0; i < solutions.length; i++) {
-    if (i == random) {
-      paragraph.innerHTML = solutions[random];
-      solutionsContainer.appendChild(paragraph);
-    }
+    paragraph.innerHTML = solutions[random];
+    //append the paragraph into the div solutionsContainer
+    solutionsContainer.appendChild(paragraph);
   }
 });
 
-// when you hover over a svg, play the sound
+// when you move your mouse over a element with the class "sound-items", play the sound
 soundItems.forEach((sounditem) => {
   sounditem.addEventListener('mouseover', () => {
     wohoSound.play();
