@@ -28,11 +28,12 @@ const solutions = [
   'wash cotton candy',
   'jump for 10 hours',
   'loading.....',
-  'wash your headphones',
-  'buy a cool shirt',
+  'give your phone a bath',
+  'chew on ice',
   'error error error',
   'we dont know',
   'backflip',
+  'wiggle your toes',
 ];
 
 // event-listener for the first button , choose random index from feelings-array, append paragraph that i created into feelings-container and play a little sound
