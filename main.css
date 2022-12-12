@@ -10,18 +10,18 @@ body {
   position: relative;
 }
 
-h1,
 h2 {
   margin-top: 3rem;
   font-size: 25px;
   font-family: 'Space Mono';
 }
 
-h2 {
+h1 {
   font-family: 'Space Mono';
-  font-size: 25px;
 
-  margin-top: 3rem;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 2rem;
 }
 
 .first-container,
@@ -42,7 +42,7 @@ h2 {
   width: 8rem;
   height: 3rem;
   margin-top: 1rem;
-  border-radius: 40%;
+  border-radius: 2rem;
   font-size: 15px;
   font-family: 'Space Mono';
 }
@@ -82,7 +82,7 @@ h2 {
 }
 
 /* Svg picture in the first container*/
-.first-item {
+.first-image {
   position: absolute;
   left: -5%;
   top: 50%;
@@ -90,8 +90,8 @@ h2 {
   height: 100px;
   cursor: pointer;
 }
-
-.second-item {
+/* svg-picture in the second container*/
+.second-image {
   position: absolute;
   width: 80px;
   height: 150px;
@@ -102,14 +102,14 @@ h2 {
 
 /* First and second svg */
 @media screen and (min-width: 768px) {
-  .first-item {
+  .first-image {
     width: 200px;
     height: 200px;
     top: 35%;
     left: 15%;
   }
 
-  .second-item {
+  .second-image {
     width: 180px;
     height: 400px;
     right: 15%;
@@ -117,7 +117,11 @@ h2 {
   }
 }
 
+/* Desktop-view for the rest of the content on the page*/
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
   h2 {
     font-size: 35px;
     margin-top: 4rem;
@@ -129,7 +133,7 @@ h2 {
 
   .btn-1,
   .btn-2 {
-    width: 10rem;
+    width: 12rem;
     height: 4rem;
     font-size: 20px;
   }

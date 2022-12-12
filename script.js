@@ -7,6 +7,7 @@ const solutionsContainer = document.querySelector('.solutions-container');
 const soundItems = document.querySelectorAll('.sound-items');
 const wohoSound = new Audio('wo.mp3');
 const clickSound = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
+
 //array for the feelings
 const feelings = [
   'sad',
@@ -20,23 +21,23 @@ const feelings = [
   'self-aware',
   'self-loathing',
   'angry',
+  'isolated',
 ];
 
 // array for the solutions
 const solutions = [
   'do a handstand',
-  'wash cotton candy',
+  'eat peas',
   'jump for 10 hours',
   'loading.....',
   'give your phone a bath',
-  'chew on ice',
-  'error error error',
+  'error',
   'we dont know',
-  'backflip',
-  'wiggle your toes',
+  '404 not found',
+  'backflip, maybe?',
 ];
 
-// event-listener for the first button , choose random index from feelings-array, append paragraph that i created into feelings-container and play a little sound
+//first button on the page, choose random index from feelings-array to loop emotions + plays a sound
 buttonFirst.addEventListener('click', () => {
   clickSound.play();
   const random = Math.floor(Math.random() * feelings.length);
@@ -49,7 +50,7 @@ buttonFirst.addEventListener('click', () => {
   }
 });
 
-// event-listener for second button, choose random index from solutions-array, append paragraph that i created into solutions-container and play a little sound
+//second button on the page, choose random index from solutions-array to loop solutions + plays a sound
 buttonSecond.addEventListener('click', () => {
   clickSound.play();
   const random = Math.floor(Math.random() * solutions.length);
@@ -62,7 +63,7 @@ buttonSecond.addEventListener('click', () => {
   }
 });
 
-// when you click on a elemnent thats a sounditem, play the sound
+// when you click on a svg, play the sound
 soundItems.forEach((sounditem) => {
   sounditem.addEventListener('mouseover', () => {
     wohoSound.play();
