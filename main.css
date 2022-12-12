@@ -12,13 +12,13 @@ body {
 
 h1 {
   margin-top: 3rem;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Space Mono';
 }
 
 h2 {
   font-family: 'Space Mono';
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 2rem;
   margin-top: 3rem;
 }
@@ -38,10 +38,10 @@ h2 {
 /* The two buttons */
 .btn-1,
 .btn-2 {
-  width: 12rem;
-  height: 4rem;
-  margin: 2rem;
+  width: 8rem;
+  height: 3rem;
 
+  margin-top: 1rem;
   border-radius: 2rem;
   font-size: 15px;
   font-family: 'Space Mono';
@@ -68,23 +68,23 @@ h2 {
 .solutions-container {
   display: flex;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
   height: 1rem;
 }
 
 .feelings-container,
 .solutions-container p {
-  font-size: 25px;
+  font-size: 15px;
   font-family: 'Space Mono';
 
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Svg picture of cat thats in the first container*/
 .first-item {
   position: absolute;
-  left: 9%;
+  left: 5%;
   top: 50%;
   width: 70px;
   height: 70px;
@@ -96,6 +96,6 @@ h2 {
     width: 150px;
     height: 120px;
     top: 50%;
-    left: 30%;
+    left: 20%;
   }
 }
