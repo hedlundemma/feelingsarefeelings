@@ -6,7 +6,7 @@ const paragraph = document.createElement('p');
 const solutionsContainer = document.querySelector('.solutions-container');
 const soundItems = document.querySelectorAll('.sound-items');
 const blurryParagraph = document.querySelector('.blurry-paragraph');
-const wohoSound = new Audio('wo.mp3');
+const wohoSound = new Audio('sounds/wo.mp3');
 const clickSound = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
 
 //array for the feelings
