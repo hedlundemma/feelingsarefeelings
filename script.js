@@ -26,13 +26,13 @@ const feelings = [
 const solutions = [
   'do a handstand',
   'paint a dog',
-  'put your pants on backwards',
-  'scream in a pillow and eat some icecream honey',
+  'lie down',
+  'scream ',
   'cut your hair',
-  'buy a cool shirt, maybe with some raindeers on',
+  'buy a cool shirt',
   'error error error',
-  'we dont know. honestly. better luck on your own',
-  '¯_(ツ)_/¯ ',
+  'we dont know',
+  'backflip',
 ];
 
 // event-listener for the first button , choose random index from feelings-array, append paragraph that i created into feelings-container
