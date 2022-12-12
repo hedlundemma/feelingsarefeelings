@@ -37,24 +37,26 @@ const solutions = [
   'backflip, maybe?',
 ];
 
-//first button on the page, choose random index from feelings-array to loop emotions + plays a sound
+//first button on the page, choose random index from feelings-array to loop feelings
 buttonFirst.addEventListener('click', () => {
+  // play a sound from the const clickSound
   clickSound.play();
   const random = Math.floor(Math.random() * feelings.length);
-
   for (i = 0; i < feelings.length; i++) {
-    if (i == random) {
+    // if i matches the value of random, append the paragraph into the div feelingsContainer
+    if (i === random) {
       paragraph.innerHTML = feelings[random];
       feelingsContainer.appendChild(paragraph);
     }
   }
 });
 
-//second button on the page, choose random index from solutions-array to loop solutions + plays a sound
+//second button on the page, choose random index from solutions-array to loop solutions
 buttonSecond.addEventListener('click', () => {
+  // play a sound from the const clickSound
   clickSound.play();
   const random = Math.floor(Math.random() * solutions.length);
-
+  // if i matches the value of random, append the paragraph into the div feelingsContainer
   for (i = 0; i < solutions.length; i++) {
     if (i == random) {
       paragraph.innerHTML = solutions[random];
@@ -63,7 +65,7 @@ buttonSecond.addEventListener('click', () => {
   }
 });
 
-// when you click on a svg, play the sound
+// when you hover over a svg, play the sound
 soundItems.forEach((sounditem) => {
   sounditem.addEventListener('mouseover', () => {
     wohoSound.play();
