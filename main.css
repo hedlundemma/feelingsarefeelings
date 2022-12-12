@@ -72,6 +72,7 @@ h1 {
   background-color: var(--black);
   color: var(--white);
   border: 4px solid var(--blue);
+  margin-bottom: 3rem;
 }
 
 .btn-2:hover,
