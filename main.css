@@ -83,7 +83,7 @@ h1 {
 /* Svg picture in the first container*/
 .first-image {
   position: absolute;
-  left: 10%;
+  left: 1%;
   top: 50%;
   width: 100px;
   height: 100px;
