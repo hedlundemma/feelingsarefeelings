@@ -41,16 +41,15 @@ const feelings = [
 
 // array for the solutions
 const solutions = [
-  'go outside and lay on the ground for 15 minutes',
-
-  'eat some candy',
-  'hug your cat',
+  'do a handstand',
+  'paint a dog',
+  'put your pants on backwards',
   'scream in a pillow and eat some icecream honey',
-  'you need to get laid',
-  'you have a strong need to get some sleep dude',
-  'better drink some water and do some stretches',
-  'we dont know. honesly. better luck on your own',
-  'you need to go a rave babe',
+  'cut your hair',
+  'buy a cool shirt, maybe with some raindeers on',
+  'error error error',
+  'we dont know. honestly. better luck on your own',
+  '¯_(ツ)_/¯ ',
 ];
 
 // event-listener for the first button , choose random index from feelings-array, append paragraph that i created into feelings-container
@@ -77,29 +76,3 @@ buttonSecond.addEventListener('click', () => {
     }
   }
 });
-
-// Loop through array of pictures, start at 0 if the array is over, button for sad pictures
-// let currentSadPictures = 0;
-// buttonFirst.addEventListener('click', () => {
-//   imageContainer.src = sadPictures[currentSadPictures];
-
-//   currentSadPictures++;
-
-//   if (currentSadPictures > sadPictures.length - 1) {
-//     currentSadPictures = 0;
-//   }
-// });
-
-// Loop through array of pictures, start at 0 if the array is over, button for happy pictures
-// let currentHappyPictures = 0;
-// buttonSecond.addEventListener('click', () => {
-//   imageContainer.src = happyPictures[currentHappyPictures];
-
-//   currentHappyPictures++;
-
-//   if (currentHappyPictures > happyPictures.length - 1) {
-//     currentHappyPictures = 0;
-//   }
-// });
-
-// array of feelings for mouseover-effect on h1
