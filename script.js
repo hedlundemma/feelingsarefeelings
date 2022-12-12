@@ -26,11 +26,11 @@ const feelings = [
 
 // array for the solutions
 const solutions = [
-  'eat poison ivy',
+  'eat some plastic',
   'jump for 78 hours',
   'loading.....',
   'google it',
-  'error',
+  'try again later',
   'we dont know',
   '404 not found',
   'backflip, maybe?',
