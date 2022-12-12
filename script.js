@@ -53,7 +53,7 @@ const solutions = [
   'you need to go a rave babe',
 ];
 
-// event-listener for första knappen, choose random index from feelings-array, append paragraph that i created into feelings-container
+// event-listener for the first button , choose random index from feelings-array, append paragraph that i created into feelings-container
 
 buttonFirst.addEventListener('click', () => {
   const random = Math.floor(Math.random() * feelings.length);
@@ -66,7 +66,7 @@ buttonFirst.addEventListener('click', () => {
   }
 });
 
-// event-listener for första knappen, choose random index from solutions-array, append paragraph that i created into solutions-container
+// event-listener for second button, choose random index from solutions-array, append paragraph that i created into solutions-container
 buttonSecond.addEventListener('click', () => {
   const random = Math.floor(Math.random() * solutions.length);
 
