@@ -26,11 +26,10 @@ const feelings = [
 
 // array for the solutions
 const solutions = [
-  'do a handstand',
-  'eat peas',
-  'jump for 10 hours',
+  'eat poison ivy',
+  'jump for 78 hours',
   'loading.....',
-  'give your phone a bath',
+  'BRB',
   'error',
   'we dont know',
   '404 not found',
