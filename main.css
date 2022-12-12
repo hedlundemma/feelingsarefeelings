@@ -38,6 +38,7 @@ h1 {
   text-align: center;
 }
 
+/* the two different sections on the page*/
 .first-container,
 .second-container {
   position: relative;

@@ -73,6 +73,6 @@ soundItems.forEach((soundItem) => {
 
 // make the paragraph under h1 not blurry when you click one it
 blurryParagraph.addEventListener('click', () => {
-  blurryParagraph.style.color = 'black';
+  blurryParagraph.style.color = 'var(--black)';
   blurryParagraph.style.textShadow = 'none';
 });
