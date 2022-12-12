@@ -61,7 +61,7 @@ buttonSecond.addEventListener('click', () => {
     solutionsContainer.appendChild(paragraph);
   }
 });
-z;
+
 // when you move your mouse over a element with the class "sound-items", play the sound
 soundItems.forEach((soundItem) => {
   soundItem.addEventListener('mouseover', () => {
