@@ -29,7 +29,7 @@ const solutions = [
   'eat poison ivy',
   'jump for 78 hours',
   'loading.....',
-  'BRB',
+  'google it',
   'error',
   'we dont know',
   '404 not found',
