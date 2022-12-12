@@ -4,25 +4,8 @@ const heading = document.querySelector('h1');
 const feelingsContainer = document.querySelector('.feelings-container');
 const paragraph = document.createElement('p');
 const solutionsContainer = document.querySelector('.solutions-container');
-
-// Change text color on mouseover on first button
-buttonFirst.addEventListener('mouseover', function () {
-  buttonFirst.style.color = '#50ccfa';
-});
-
-// Change text color back on mouseout
-buttonFirst.addEventListener('mouseout', function () {
-  buttonFirst.style.color = '#ffffff';
-});
-
-buttonSecond.addEventListener('mouseover', function () {
-  buttonSecond.style.color = '#181d1c';
-});
-
-// Change text color back on mouseout
-buttonSecond.addEventListener('mouseout', function () {
-  buttonSecond.style.color = '#ffffff';
-});
+const soundItems = document.querySelectorAll('.sound-items');
+const music = new Audio('wo.mp3');
 
 //array for the feelings
 const feelings = [
@@ -53,7 +36,6 @@ const solutions = [
 ];
 
 // event-listener for the first button , choose random index from feelings-array, append paragraph that i created into feelings-container
-
 buttonFirst.addEventListener('click', () => {
   const random = Math.floor(Math.random() * feelings.length);
 
@@ -76,3 +58,11 @@ buttonSecond.addEventListener('click', () => {
     }
   }
 });
+
+soundItems.forEach((sounditem) => {
+  sounditem.addEventListener('click', () => {
+    music.play();
+  });
+});
+
+// const myTimeout = setTimeout(myGreeting, 5000);
