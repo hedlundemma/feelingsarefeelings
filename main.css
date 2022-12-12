@@ -99,6 +99,21 @@ h1 {
   cursor: pointer;
 }
 
+/* rotate the svg-pictures on hover*/
+.first-image:hover,
+.second-image:hover {
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 /* First and second svg */
 @media screen and (min-width: 768px) {
   .first-image {
