@@ -5,6 +5,7 @@ const feelingsContainer = document.querySelector('.feelings-container');
 const paragraph = document.createElement('p');
 const solutionsContainer = document.querySelector('.solutions-container');
 const soundItems = document.querySelectorAll('.sound-items');
+const blurryParagraph = document.querySelector('.blurry-paragraph');
 const wohoSound = new Audio('wo.mp3');
 const clickSound = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
 
@@ -26,14 +27,15 @@ const feelings = [
 
 // array for the solutions
 const solutions = [
-  'eat some plastic',
+  'solo thumb-war',
   'jump for 78 hours',
   'loading.....',
   'google it',
   'try again later',
-  'we dont know',
+  'use tablets as swords',
   '404 not found',
   'backflip, maybe?',
+  'kiss a bee',
 ];
 
 //first button on the page, choose random index from feelings-array to loop feelings
@@ -67,4 +69,10 @@ soundItems.forEach((soundItem) => {
   soundItem.addEventListener('mouseover', () => {
     wohoSound.play();
   });
+});
+
+// make the paragraph under h1 not blurry when you click one it
+blurryParagraph.addEventListener('click', () => {
+  blurryParagraph.style.color = 'black';
+  blurryParagraph.style.textShadow = 'none';
 });
