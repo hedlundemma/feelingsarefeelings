@@ -5,14 +5,23 @@ const feelingsContainer = document.querySelector('.feelings-container');
 const paragraph = document.createElement('p');
 const solutionsContainer = document.querySelector('.solutions-container');
 
-// Change text color on mouseover
+// Change text color on mouseover on first button
 buttonFirst.addEventListener('mouseover', function () {
-  buttonFirst.style.color = '#4080c6';
+  buttonFirst.style.color = '#50ccfa';
 });
 
 // Change text color back on mouseout
 buttonFirst.addEventListener('mouseout', function () {
-  buttonFirst.style.color = 'white';
+  buttonFirst.style.color = '#ffffff';
+});
+
+buttonSecond.addEventListener('mouseover', function () {
+  buttonSecond.style.color = '#181d1c';
+});
+
+// Change text color back on mouseout
+buttonSecond.addEventListener('mouseout', function () {
+  buttonSecond.style.color = '#ffffff';
 });
 
 //array for the feelings
@@ -33,7 +42,7 @@ const feelings = [
 // array for the solutions
 const solutions = [
   'go outside and lay on the ground for 15 minutes',
-  'you are good as you are',
+
   'eat some candy',
   'hug your cat',
   'scream in a pillow and eat some icecream honey',
@@ -41,6 +50,7 @@ const solutions = [
   'you have a strong need to get some sleep dude',
   'better drink some water and do some stretches',
   'we dont know. honesly. better luck on your own',
+  'you need to go a rave babe',
 ];
 
 // event-listener for första knappen, choose random index from feelings-array, append paragraph that i created into feelings-container
